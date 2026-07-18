@@ -1,0 +1,15 @@
+.topBar .container{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    background-color: black;
+    color: aliceblue;
+}
+.topBar span strong{
+    color: red;
+    font-size: 22px;
+}
+.container a {
+    text-decoration: none;
+    color: white;
+}
