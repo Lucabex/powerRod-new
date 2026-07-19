@@ -9,22 +9,27 @@ function Landing(){
             </div>
         </div>
         <header>
-            <div class="container nav">
+            <div class="headerBox">
                 <a class="logo" href="#">
-                POWER<em>R<span class="rod-o">O</span>D</em>
-                <span class="logo-tag">Plumbing &amp; Drain Care Specialists</span>
+                    
+                    POWER<em>R<span class="rod-o">O</span>D</em>
+                    <span class="logo-tag">Plumbing &amp; Drain Care Specialists</span>
+
                 </a>
-                <nav aria-label="Main navigation">
-                <ul>
+             
+                <ul id="navigatioBar">
                     <li><a href="#services">Services</a></li>
                     <li><a href="#sectors">Sectors</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                </nav>
-                <a class="btn btn-red" href="tel:08000217770">Call Now</a>
+            
+                <a class="btnCall" href="tel:08000217770">Call Now</a>
             </div>
         </header>
+        <div className="hero">
+            
+        </div>
         </>
     )
 }
