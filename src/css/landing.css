@@ -16,10 +16,12 @@
 .headerBox{
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 20px 15px;
     position: sticky;
-    padding-left: 15px;
-    padding-right: 15px;
+    top: 0;               
+    z-index: 100;        
+    background: white;   
+    
 }
 #navigatioBar{
     display: flex;
@@ -183,6 +185,26 @@ display: inline-block;
     border-radius: 5px;
 
 }
+#box10{
+    position:absolute;
+    left: 61%;
+    top: 41%;
+    width: 60px;
+    height: 60px;
+    background-color:  rgb(255, 255, 255);
+    border-radius: 5px;
+
+}
+#box11{
+    position:absolute;
+    left: 80%;
+    top: 69%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+
+}
 
 .introContent{
     padding: 40px;
@@ -330,7 +352,7 @@ display: inline-block;
 }
 .blackArea{
     width: 100%;
-    height: 500px;
+    
     background-color: black;
     padding: 150px;
 }
@@ -356,12 +378,54 @@ display: inline-block;
 }
 .wwwGrid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    color: white;
+    margin-top: 20px;
 
+}
+.card2{
+    width: 180px;
+    background-color: white;
+    height: 50px;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-body);
+    font-weight: 900;
+}
+.card2:hover{
+    background-color: var(--red2);
+    font-weight: 900;
+    font-family: var(--font-body);
+}
+.content{
+    width: 100%;
+    height: 450px;
+    background-color: white;
+}
+.redBanner{
+    width: 100%;
+    height: 180px;
+    background-color: var(--red2);
+}
+@media(max-width:1400px){
+    .wwwGrid{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+}
+@media(max-width:768px){
+     .containerGrid {
+        padding: 20px;
+        padding-left: 20px;
+     }
+}
 @media(max-width:680px){
     .containerGrid {
         padding: 0 10px 100px 100px;
+        
     }
     .wwdGridBox{
         padding: 10px;
@@ -386,15 +450,16 @@ display: inline-block;
     .topBar span {
         font-size: 10px;
         padding-top: 9px;
-}
+    }
     .topBar span strong {
         font-size: 10px;
         padding-top: 9px;
 
 
-}
-#box2{
-    width: 20px;
-    height: 20px;
-}
+    }
+    #box2{
+        width: 20px;
+        height: 20px;
+    }
+    
 }

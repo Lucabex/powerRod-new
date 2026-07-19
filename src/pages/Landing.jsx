@@ -9,11 +9,11 @@ function Landing(){
             </div>
         </div>
         <header>
-            <div class="headerBox">
+            <div className="headerBox">
                 <a className="logo" href="#">
                     
                     POWER<em>R<span className="rod-o">O</span>D</em>
-                    <span class="logo-tag">Plumbing &amp; Drain Care Specialists</span>
+                    <span className="logo-tag">Plumbing &amp; Drain Care Specialists</span>
 
                 </a>
              
@@ -24,7 +24,7 @@ function Landing(){
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             
-                <a class="btnCall" href="tel:02088474111">Call Now</a>
+                <a className="btnCall" href="tel:02088474111">Call Now</a>
             </div>
         </header>
         <div className="hero">
@@ -38,6 +38,8 @@ function Landing(){
                 <span id="box7"></span>
                 <span id="box8"></span>
                 <span id="box9"></span>
+                <span id="box10"></span>
+                <span id="box11"></span>
             </div>
             <div className="introContent">
 
@@ -66,7 +68,7 @@ function Landing(){
                 
             </div>
        
-                    <div class="containerGrid">
+                    <div className="containerGrid">
                         <div className="card">
                             <h1>EMERGENCY CALL-OUTS</h1>
                             <p>Immediate response to burst pipes, overflows, blocked drains and flooded basements — any hour, any day.</p>
@@ -93,11 +95,34 @@ function Landing(){
                         </div>
                     </div>
                     <div className="blackArea">
+
                          <div className="topBoxBlack">
-                    <h3>WHO WE WORK WITH</h3>
-                    <h2>TRUSTED ACROSS EVERY SECTOR</h2>
-                        <p>Over 25 years serving domestic and commercial clients throughout Greater London and the Home Counties.</p>
-                </div>
+                            <h3>WHO WE WORK WITH</h3>
+                            <h2>TRUSTED ACROSS EVERY SECTOR</h2>
+                                <p>Over 25 years serving domestic and commercial clients throughout Greater London and the Home Counties.</p>
+                        </div>
+
+                        <div className="wwwGrid">
+                            <div className="card2">DOMESTIC</div>
+                            <div className="card2">RETAIL</div>
+                            <div className="card2">HEALTHCARE</div>
+                            <div className="card2">LEISURE</div>
+                            <div className="card2">PROPERTY</div>
+                            <div className="card2">LOCAL AUTHORITY</div>
+                            
+                        </div>
+
+
+                    </div>
+                    <div className="content">
+                    
+                    </div>
+                    <div className="redBanner">
+                        <h1>DRAIN PROBLEM? WE ARE ON OUR WAY.</h1>
+                        <p>Free surveys · No-obligation site visits · All workmanship guaranteed</p>
+                    </div>
+                    <div className="footer">
+
                     </div>
               
         </>
