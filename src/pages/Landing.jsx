@@ -118,8 +118,14 @@ function Landing(){
                     
                     </div>
                     <div className="redBanner">
-                        <h1>DRAIN PROBLEM? WE ARE ON OUR WAY.</h1>
-                        <p>Free surveys · No-obligation site visits · All workmanship guaranteed</p>
+                        <div className="textBanner">
+                            <h1>DRAIN PROBLEM? WE ARE ON OUR WAY.</h1>
+                            <p>Free surveys · No-obligation site visits · All workmanship guaranteed</p>
+                        </div>
+                        <div className="showNumberBanner">
+                            <p>Call Now <a href="tel:02088474111"> 02088474111</a></p>
+                        </div>
+                        
                     </div>
                     <div className="footer">
 
