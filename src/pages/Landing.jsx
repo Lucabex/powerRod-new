@@ -75,10 +75,29 @@ function Landing(){
                             <h1>HIGH PRESSURE JETTING</h1>
                             <p>Powerful water jetting and mechanical descaling to restore full flow to blocked or scaled pipework.</p>
                         </div>
-                        <div className="card">3</div>
-                        <div className="card">4</div>
-                        <div className="card">5</div>
-                        <div className="card">6</div>
+                        <div className="card">
+                             <h1>CCTV DRAIN SURVEYS</h1>
+                            <p>Camera surveys that pinpoint faults precisely, with clear reports and recommendations before any work begins.</p>
+                        </div>
+                        <div className="card">
+                            <h1>LEAK DETECTION</h1>
+                            <p>Non-invasive tracing of hidden leaks, minimising disruption and avoiding unnecessary excavation.</p>
+                        </div>
+                        <div className="card">
+                            <h1>PIPE LINING & REPAIRS</h1>
+                            <p>No-dig pipe lining, drain repairs and maintenance that extend the life of your system.</p>
+                        </div>
+                        <div className="card">
+                            <h1>PLANNED MAINTENANCE</h1>
+                            <p>Preventative programmes that keep drains clear and free-flowing — prevention is better than cure.</p>
+                        </div>
+                    </div>
+                    <div className="blackArea">
+                         <div className="topBoxBlack">
+                    <h3>WHO WE WORK WITH</h3>
+                    <h2>TRUSTED ACROSS EVERY SECTOR</h2>
+                        <p>Over 25 years serving domestic and commercial clients throughout Greater London and the Home Counties.</p>
+                </div>
                     </div>
               
         </>
