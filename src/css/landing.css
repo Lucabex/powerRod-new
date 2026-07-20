@@ -451,6 +451,41 @@ display: inline-block;
      letter-spacing: 1px;
     
 }
+.footer{
+    width: 100%;
+    min-height: 160px;
+    background-color: black;
+    padding: 50px 15px 15px 15px;
+}
+.footerGrid{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    
+    height: 250px;
+    
+
+}
+.ft1{
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 800;
+    font-size: 34px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: var(--ink);
+    line-height: 1;
+    color: white;
+    padding: 75px 30px 30px 30px;
+}
+.ft1 strong{
+    color: var(--red2);
+}
+.ft1 p{
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+}
 @media(max-width:1400px){
     .wwwGrid{
         grid-template-columns: 1fr 1fr 1fr;

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-function Contact(){
+function Sectors(){
     return(
-    <>
-    <div className="topBar">
+        <>
+        <div className="topBar">
             <div className="container">
                 <span><strong>24/7</strong> Emergency Response — Greater London......</span>
                 <a href="tel:02088474111">0208 847 4111</a>
@@ -29,8 +29,8 @@ function Contact(){
                 <a className="btnCall" href="tel:02088474111">Call Now</a>
             </div>
         </header>
-        Contact
-    </>
+        sectors
+        </>
     )
 }
-export default Contact;
+export default Sectors;

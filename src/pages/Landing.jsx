@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 function Landing(){
     return(
         <>
@@ -18,10 +19,11 @@ function Landing(){
                 </a>
              
                 <ul id="navigatioBar">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#sectors">Sectors</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <Link to="/">Home</Link>
+                    <Link to="/services">Services</Link>
+                    <Link to="/sectors">Sectors</Link>
+                    <Link to="/contact">Contact</Link>
+                    <Link to="/about">About</Link>
                 </ul>
             
                 <a className="btnCall" href="tel:02088474111">Call Now</a>
@@ -128,7 +130,16 @@ function Landing(){
                         
                     </div>
                     <div className="footer">
+                        <div className="footerGrid">
+                            <div className="ft1">
+                                <h2>POWER<strong>ROD</strong></h2>
+                                <p>London's leading plumbing and drain care specialists. Reactive, round-the-clock service for over 25 years.</p>
+                            </div>
+                            <div className="ft2">
 
+                            </div>
+                            <div className="ft3">q</div>
+                        </div>
                     </div>
               
         </>
