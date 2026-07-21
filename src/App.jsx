@@ -8,9 +8,13 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import Sectors from './pages/Sectors.jsx';
+import ServiceDetail from './pages/ServiceDetail.jsx';
+import SectorDetail from "./pages/SectorDetail";
 import './App.css'
 
 import  './css/landing.css'
+import  './css/services.css'
+import  './css/sectors.css'
 
 function App() {
   
@@ -24,6 +28,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/sectors" element={<Sectors />} />
+        <Route path="/services/:slug" element={<ServiceDetail />} />
+        <Route path="/sectors/:slug" element={<SectorDetail />} />
       </Routes>
     </BrowserRouter>
     </>

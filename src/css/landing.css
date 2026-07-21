@@ -1,3 +1,6 @@
+/* ==========================================================================
+   TOP BAR
+   ========================================================================== */
 .topBar .container{
     display: flex;
     justify-content: space-around;
@@ -13,6 +16,11 @@
     text-decoration: none;
     color: white;
 }
+ 
+ 
+/* ==========================================================================
+   HEADER / NAVIGATION
+   ========================================================================== */
 header {
   position: sticky;
   top: 0;
@@ -47,7 +55,7 @@ ul a{
     letter-spacing: 0.3px;
     
 }
-
+ 
 .btnCall{
 display: inline-block;
     font-family: var(--font-display);
@@ -91,7 +99,11 @@ display: inline-block;
     color: var(--grey);
     margin-top: 3px;
   }
-
+ 
+ 
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
   .hero{
     background: linear-gradient(135deg, var(--ink) 30%, var(--charcoal) 70%, #4e1b16 100%);
     width: 100%;
@@ -100,7 +112,8 @@ display: inline-block;
     position: relative;
     padding: 20px;
   }
-
+ 
+  /* Decorative scattered boxes */
   #box1{
     position:absolute;
     left: 70%;
@@ -109,7 +122,7 @@ display: inline-block;
     height: 140px;
     background-color:var(--red2);
     border-radius: 5px;
-
+ 
 }
   #box2{
     position:absolute;
@@ -119,7 +132,7 @@ display: inline-block;
     height: 50px;
     background-color: rgba(81, 81, 81, 0.55);
     border-radius: 5px;
-
+ 
 }
   #box3{
     position:absolute;
@@ -129,7 +142,7 @@ display: inline-block;
     height: 100px;
     background-color:  rgba(81, 81, 81, 0.55);
     border-radius: 5px;
-
+ 
 }
   #box4{
     position:absolute;
@@ -139,7 +152,7 @@ display: inline-block;
     height: 120px;
     background-color: rgb(81, 81, 81);
     border-radius: 5px;
-
+ 
 }
   
   #box5{
@@ -150,7 +163,7 @@ display: inline-block;
     height: 110px;
     background-color: rgb(81, 81, 81);
     border-radius: 5px;
-
+ 
 }
   #box6{
     position:absolute;
@@ -160,7 +173,7 @@ display: inline-block;
     height: 110px;
     background-color:var(--red3);
     border-radius: 5px;
-
+ 
 }
 #box7{
     position:absolute;
@@ -170,7 +183,7 @@ display: inline-block;
     height: 120px;
     background-color: rgb(81, 81, 81);
     border-radius: 5px;
-
+ 
 }
 #box8{
     position:absolute;
@@ -189,7 +202,7 @@ display: inline-block;
     height: 120px;
     background-color:#ff07077d;
     border-radius: 5px;
-
+ 
 }
 #box10{
     position:absolute;
@@ -199,7 +212,7 @@ display: inline-block;
     height: 60px;
     background-color:  rgb(255, 255, 255);
     border-radius: 5px;
-
+ 
 }
 #box11{
     position:absolute;
@@ -209,14 +222,15 @@ display: inline-block;
     height: 50px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
-
+ 
 }
-
+ 
+  /* Hero content */
 .introContent{
     padding: 40px;
     max-width: 700px;
     height: 600px;
-
+ 
 }
 .introContent p {
     color:var(--red2);
@@ -229,10 +243,10 @@ display: inline-block;
     font-size: 20px;
     font-weight: 900;
 }
-
+ 
 .emergBtn{
     margin-top: 20px;
-    background-color: var(--red2);
+    background-color: var(--red);
     padding: 18px;
     font-size: 18px;
     color: white;
@@ -247,21 +261,24 @@ display: inline-block;
 }
 .servBtn{
      margin-top: 20px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     padding: 18px;
     font-size: 18px;
-    color: white;
+    color: rgb(2, 2, 2);
     border-radius: 5px;
     border: none;
 }
-
+ 
 .servBtn:hover{
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 .emergBtn:hover{
     background-color: white;
     color: var(--red2);
+}
+.textBanner{
+    font-family: var(--font-display);
 }
 .callBanner{
     padding: 20px;
@@ -274,6 +291,10 @@ display: inline-block;
     border-radius: 10px;
     font-family: var(--font-display);
 }
+.callBanner:hover{
+    background-color: var(--red);
+    color: white;
+}
 #pCall{
     font-size: 33px;
 }
@@ -282,6 +303,11 @@ display: inline-block;
     color: var(--red2);
     text-decoration: none;
     margin-left: 3px;
+}
+.callBanner a:hover{
+    
+    color:white;
+   
 }
 .head1{
     color: rgb(255, 255, 255);
@@ -308,7 +334,21 @@ display: inline-block;
     padding: 0;
      max-height: 75px;
 }
+.whatsappBtnTop{
+     display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #25D366;
+    padding: 20px;
+    margin-top: 20PX;
+    border-radius: 10PX;
+    
+  }
+ 
 
+/* ==========================================================================
+   SERVICES SECTION ("WHAT WE DO")
+   ========================================================================== */
 .wwdGridBox{
     width:100%;
     
@@ -330,25 +370,52 @@ display: inline-block;
     margin: 0;
    
 }
-.containerGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-
-  padding: 0 200px 100px 100px;
+.bigGrid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0;
 }
+.containerGrid {
+ display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 0px 0 100px 110px;
+   
+}
+.imgGrid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    
+}
+.sideImg{
+    width: 100%;
+    height: 100%;
+     object-fit: cover;
+    display: block;
+
+}
+
 .card{
     width: 260px;
     height: 255px;
     background-color: rgb(255, 255, 255);
     border: 0.5px solid rgba(128, 128, 128, 0.353);
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.461);
+   
     transition: transform 0.18s ease, box-shadow 0.18s ease;
     padding: 10px;
     border-left: 5px solid var(--red2);
+    
 }
-.card h1{
+ 
+.card:hover{
+    transform: translateY(-4px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.461);
+}
+.card h3{
     font-family: var(--font-display);
     font-size: 30px;
 }
@@ -356,6 +423,11 @@ display: inline-block;
     font-family: var(--font-display);
     font-size: 18px;
 }
+ 
+ 
+/* ==========================================================================
+   SECTORS SECTION ("WHO WE WORK WITH")
+   ========================================================================== */
 .blackArea{
     width: 100%;
     
@@ -366,28 +438,28 @@ display: inline-block;
      font-family: var(--font-display);
     font-size: 25px;
     color: #55524f;
-
+ 
 }
 .topBoxBlack h2{
    font-family: var(--font-display);
     font-size: 55px;
     margin: 0;
     color:var(--red);
-
+ 
 }
 .topBoxBlack p{
    font-family: var(--font-display);
     font-size: 20px;
     margin: 0;
     color:white;
-
+ 
 }
 .wwwGrid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     color: white;
     margin-top: 20px;
-
+ 
 }
 .card2{
     width: 180px;
@@ -411,6 +483,169 @@ display: inline-block;
     height: 450px;
     background-color: white;
 }
+ 
+ 
+/* ==========================================================================
+   ACCREDITATIONS / CERTIFICATES SECTION
+   ========================================================================== */
+.certificateBox{
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+    padding: 100px;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+}
+.certTopBox h3{
+    font-family: var(--font-display);
+    font-size: 25px;
+    color: #55524f;
+}
+.certTopBox h2{
+    font-family: var(--font-display);
+    font-size: 55px;
+    margin: 0 0 40px 0;
+}
+.certGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+.certCard{
+    background-color: white;
+    border: 0.5px solid rgba(128, 128, 128, 0.353);
+    border-radius: 5px;
+    padding: 25px 20px;
+    border-top: 5px solid var(--red2);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.certCard:hover{
+    transform: translateY(-4px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.461);
+}
+.certCard h3{
+    font-family: var(--font-display);
+    font-size: 26px;
+    margin: 0 0 6px 0;
+    color: var(--ink);
+}
+.certCard p{
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: #55524f;
+    margin: 0;
+}
+ 
+ 
+/* ==========================================================================
+   WHY US SECTION
+   ========================================================================== */
+.whyUs{
+    width: 100%;
+    background-color: black;
+    padding: 100px;
+}
+.whyUsTopBox{
+    width: 600px;
+}
+.whyUsTopBox h3{
+    font-family: var(--font-display);
+    font-size: 25px;
+    color: #8a8a8a;
+}
+.whyUsTopBox h2{
+    font-family: var(--font-display);
+    font-size: 50px;
+    
+    color: var(--red);
+}
+.whyUsTopBox span{
+    color: white;
+}
+.whyUsTopBox strong{
+    color:var(--red2);
+}
+
+.whyUsGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+.whyCard{
+    background-color: #1a1a1a;
+    border: 1px solid #3a3a3a;
+    border-radius: 10px;
+    padding: 35px 25px;
+    text-align: center;
+    transition: transform 0.18s ease, border-color 0.2s ease;
+}
+.whyCard:hover{
+    transform: translateY(-4px);
+    border-color: var(--red2);
+}
+.whyIcon{
+    width: 48px;
+    height: 48px;
+    color: var(--red2);
+    stroke-width: 1.8;
+    margin-bottom: 15px;
+}
+.whyCard h4{
+    font-family: var(--font-display);
+    font-size: 26px;
+    color: white;
+    margin: 0 0 10px 0;
+}
+.whyCard p{
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: #b5b1ae;
+    margin: 0;
+    line-height: 1.5;
+}
+ 
+ 
+/* ==========================================================================
+   PICTURE GALLERY SECTION
+   ========================================================================== */
+.pictureBox{
+    width: 100%;
+    background-color: white;
+    padding: 100px;
+}
+.pictureTopBox h3{
+    font-family: var(--font-display);
+    font-size: 25px;
+    color: #55524f;
+}
+.pictureTopBox h2{
+    font-family: var(--font-display);
+    font-size: 55px;
+    margin: 0 0 40px 0;
+}
+.pictureGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+.pictureTile{
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.pictureTile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.pictureTile:hover img{
+    transform: scale(1.06);
+}
+ 
+ 
+/* ==========================================================================
+   RED CTA BANNER
+   ========================================================================== */
 .redBanner{
     width: 100%;
     height: 180px;
@@ -419,7 +654,7 @@ display: inline-block;
     display: grid;
     grid-template-columns: 4fr 2fr;
 }
-.redBanner h1{
+.redBanner h2{
     color: white;
     font-family: var(--font-display);
     font-size: 53px;
@@ -430,20 +665,30 @@ display: inline-block;
     font-size: 20px;
 }
 .showNumberBanner{
-    padding-top: 25px;
+   
     
 }
-.showNumberBanner p{
-    text-decoration: none;
+.numberBtn{
+    width: 70%;
+    height: 70%;
+    
+}
+.numberBtn p{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;text-decoration: none;
     background-color: white;
     padding: 25px;
-    max-width: 290px;
+  
     color: var(--red2);
     font-family: var(--font-display);
     font-size: 32px;
     border: none;
     border-radius: 10px;
+
 }
+
+
 .showNumberBanner a{
      text-decoration: none;
      color: var(--red2);
@@ -451,19 +696,25 @@ display: inline-block;
      letter-spacing: 1px;
     
 }
+ 
+ 
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
 .footer{
     width: 100%;
     min-height: 160px;
     background-color: black;
     padding: 50px 15px 15px 15px;
+    font-family: var(--font-display);
 }
 .footerGrid{
     display: grid;
-    grid-template-columns: 4fr 1fr 1fr;
-    
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    padding-right: 100px;
     height: 250px;
     
-
+ 
 }
 .ft1{
     font-family: var(--font-display);
@@ -486,17 +737,94 @@ display: inline-block;
     font-weight: 300;
     color: white;
 }
+#footLogo{
+    font-size: 60px;
+}
+.ft2{
+    color: white;
+   
+    padding: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.78);
+}
+.ft3{
+    color: white;
+    padding: 20px;
+    padding-left: 0px;
+    text-decoration: none;
+     
+}
+.ft3 p {
+    font-size: 26px;
+    font-weight: 800;
+}
+#linkFooter{
+     list-style-type: none;
+     color: white;
+      text-decoration: none;
+      font-size: 18px;
+      
+}
+
+/* ==========================================================================
+   WHATSAPP FLOATING BUTTON
+   ========================================================================== */
+.whatsappBtn{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 200;
+   
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.35);
+    transition: transform 0.18s ease;
+}
+.whatsappBtn:hover{
+    transform: translateY(-3px);
+}
+.whatsappIcon{
+    width: 94px;
+    height: 94px;
+}
+ 
+ 
+/* ==========================================================================
+   RESPONSIVE — TABLET (max-width: 1400px)
+   ========================================================================== */
 @media(max-width:1400px){
     .wwwGrid{
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem;
     }
 }
-@media(max-width:778px){
-     .containerGrid {
-        padding: 20px;
-        padding-left: 20px;
-     }
+ @media(max-width:1024px){
+  
+     .redBanner h2{
+    color: white;
+    font-family: var(--font-display);
+    font-size: 43px;
+}
+.numberBtn p{
+    padding: 0;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+ 
+/* ==========================================================================
+   RESPONSIVE — TABLET (max-width: 778px-820px)
+   ========================================================================== */
+   @media(max-width:820px){
+  
+   }
+@media(max-width:768px){
+ 
      .wwwGrid{
         grid-template-columns: 1fr 1fr ;
         gap: 2rem;
@@ -504,12 +832,84 @@ display: inline-block;
     .blackArea{
         padding: 40px;
     }
+     .redBanner h2{
+    color: white;
+    font-family: var(--font-display);
+    font-size: 23px;
 }
-@media(max-width:680px){
-    .containerGrid {
-        padding: 0 10px 100px 100px;
-        
+.numberBtn p{
+    padding: 0;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+}
+ 
+ 
+/* ==========================================================================
+   RESPONSIVE — PICTURE GALLERY (max-width: 900px / 500px)
+   ========================================================================== */
+@media(max-width:900px){
+    .pictureGrid{
+        grid-template-columns: repeat(2, 1fr);
     }
+}
+@media(max-width:500px){
+    .pictureBox{
+        padding: 40px 20px;
+    }
+}
+ 
+ 
+/* ==========================================================================
+   RESPONSIVE — MOBILE (max-width: 680px)
+   ========================================================================== */
+@media(max-width:680px){
+    .showNumberBanner{
+    padding-top: 30px;
+    
+}
+    .wwwGrid{
+        gap: 5px;
+    }
+    .wwdGridBox{
+       padding: 30px;
+    }
+    .certificateBox{
+        padding: 40px;
+    }
+    .numberBtn{
+    width: 100%;
+    height: 80%;
+    
+}
+.numberBtn p{
+    width: 100%;
+    height: 100%;
+   font-size: 3px;
+    text-decoration: none;
+    background-color: white;
+    padding: 25px;
+}
+    .redBanner{
+        padding: 15px 15px 15px 15px;
+    }
+    .redBanner h2{
+    color: white;
+    font-family: var(--font-display);
+    font-size: 23px;
+}
+   
+  
+   .showNumberBanner p{
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 0;
+ 
+   }
+  
     .wwdGridBox{
         padding: 10px;
     }
@@ -537,12 +937,64 @@ display: inline-block;
     .topBar span strong {
         font-size: 10px;
         padding-top: 9px;
-
-
+ 
+ 
     }
     #box2{
         width: 20px;
         height: 20px;
     }
+    .whyUs{
+        padding: 40px;
+    }
+    .whyUsTopBox{
+    width: 300px;
+}
+
     
+}
+@media(max-width:425px){
+.numberBtn p{
+    width: 100%;
+    height: 70%;
+   font-size: 13px;
+    text-decoration: none;
+    background-color: white;
+    padding: 5px;
+    margin-top: 20px;
+}
+}
+/* ==========================================================================
+   RESPONSIVE — "WHAT WE DO" GRID + SIDE IMAGE
+   ========================================================================== */
+@media(max-width:1024px){
+    .containerGrid{
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        padding: 0 20px 60px 20px;
+    }
+    .bigGrid{
+        grid-template-columns: 1fr;
+    }
+    .imgGrid{
+        padding: 0 20px 40px 20px;
+        min-height: 260px;
+        order: -1;
+    }
+}
+
+@media(max-width:680px){
+    .containerGrid{
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 15px;
+        padding: 0 15px 40px 15px;
+    }
+    .card{
+        width: 100%;
+        height: auto;
+        min-height: 220px;
+    }
+    .imgGrid{
+        min-height: 200px;
+        padding: 0 15px 30px 15px;
+    }
 }

@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
 import Landing from "./Landing";
+import whatsappIcon from "../assets/icon.png";
+import { Helmet } from "react-helmet-async";
 function About(){
 
     return(
         <>
-        
+       <Helmet>
+    <title>About Us | Power Rod Plumbing & Drain Care Specialists</title>
+    <meta name="description" content="Over 25 years serving Greater London and the Home Counties. Meet the directly employed team behind Power Rod's 7-Point Customer Charter and accredited service." />
+</Helmet>
         <div className="topBar">
             <div className="container">
                 <span><strong>24/7</strong> Emergency Response — Greater London......</span>
@@ -32,7 +37,36 @@ function About(){
                 <a className="btnCall" href="tel:02088474111">Call Now</a>
             </div>
         </header>
-        about
+        
+        <div className="footer">
+                        <div className="footerGrid">
+                            <div className="ft1">
+                                <p id="footLogo">POWER<strong>ROD</strong></p>
+                                <p>London's leading plumbing and drain care specialists. Reactive, round-the-clock service for over 25 years.</p>
+                            </div>
+                            <div className="ft2">
+                                 <h4>The area we serve</h4>
+                            </div>
+                            <div className="ft2">
+                                <h4>Contact</h4>
+                            </div>
+                            <div className="ft3">
+                                <p>Company</p>
+                                <p><Link to="./services" id="linkFooter">SERVICES</Link></p>
+                                <p><Link to="./about" id="linkFooter">ABOUT</Link></p>
+                                <p><Link to="./services" id="linkFooter">CONTACTS</Link></p>
+                                <p><Link to="./sectors" id="linkFooter">SECTORS</Link></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a className="whatsappBtn"
+                        href="https://wa.me/447700900123?text=Hi%20Power%20Rod%2C%20I%20have%20a%20drainage%20problem"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img src={whatsappIcon} alt="WhatsApp" className="whatsappIcon" />
+                    </a>
         
         </>
     )

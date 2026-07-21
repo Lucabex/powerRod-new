@@ -1,0 +1,21 @@
+.bigSectorGrid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+.sideGridImg{
+    display: grid;
+   grid-template-rows: 1fr 1fr;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    padding-top: 150px;
+}
+.sectorImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    width: 550px;
+    height: 600px;
+}
