@@ -9,7 +9,9 @@ import plumb1 from "../assets/plumb1.avif";
 import plumb2 from "../assets/plumb2.avif";
 import plumb3 from "../assets/plumb3.jpg";
 import plumb4 from "../assets/plumb4.jpg";
+import phoneIcon from "../assets/phone.png";
 import { Helmet } from "react-helmet-async";
+import { Clock, HardHat, PoundSterling, ShieldCheck, MapPin, Calendar, Star } from "lucide-react";
 
 const galleryImages = [
     { src: bath1, alt: "Modern bathroom installation" },
@@ -49,7 +51,7 @@ function Landing(){
                 </a>
              
                 <ul id="navigatioBar">
-                    <Link to="/">Home</Link>
+                  
                     <Link to="/services">Services</Link>
                     <Link to="/sectors">Sectors</Link>
                     <Link to="/contact">Contact</Link>
@@ -139,7 +141,10 @@ function Landing(){
                         </div>
 
                         <div className="imgGrid">
-                            <img className="sideImg" src={plumb1} alt="Boiler and pipework installation" />
+                            <div className="testImgBox">
+                                   <img className="side" src={plumb1} alt="Boiler and pipework installation" />
+                            </div>
+                         
                         </div>
 
                     </div>
@@ -255,17 +260,56 @@ function Landing(){
                     </div>
 
                     <div className="footer">
+                        <div className="footerHeader">
+                            <p className="starRating">
+                                {[...Array(5)].map((_, i) => (
+                                    <Star key={i} className="starIcon" fill="#FFC107" strokeWidth={0} />
+                                ))}
+                                <span>5 star client rating</span>
+                            </p>
+                            <p>
+                                <MapPin className="footerIcon" />
+                                Based in Chesham, Buckinghamshire
+                            </p>
+                            <p>
+                                <Calendar className="footerIcon" />
+                                Active since 1998
+                            </p>
+                        </div>
                         <div className="footerGrid">
+
                             <div className="ft1">
                                 <p id="footLogo">POWER<strong>ROD</strong></p>
                                 <p>London's leading plumbing and drain care specialists. Reactive, round-the-clock service for over 25 years.</p>
+                                <p>
+                                <a className="whatsappBtnFooter"
+                                    href="https://wa.me/447700900123"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="Chat with us on WhatsApp"
+                                >
+                                    WhatsApp Now
+                                </a>
+                            </p>
                             </div>
+
                             <div className="ft2">
-                                 <h4>The area we serve</h4>
+                                <h4>The area we serve</h4>
                             </div>
+
                             <div className="ft2">
                                 <h4>Contact</h4>
+                                <p>Unit 2A Botley Lane ,Ley Hill,Chesham, Buckinghamshire,HP51XS</p>
+                                <p>Tel. <a href="tel:02088474111" id="pCall2">0208 847 4111</a></p>
+                               <a className="mapLink"
+                                    href="https://www.google.com/maps/search/?api=1&query=Botley+Lane,+Unit+2+Botley+Ln,+Botley+Rd,+Chesham+HP5+1XS"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Find Us on Google Maps
+                                </a>
                             </div>
+
                             <div className="ft3">
                                 <p>Company</p>
                                 <p><Link to="./services" id="linkFooter">SERVICES</Link></p>
@@ -274,6 +318,7 @@ function Landing(){
                                 <p><Link to="./sectors" id="linkFooter">SECTORS</Link></p>
 
                             </div>
+
                         </div>
                     </div>
                     <a className="whatsappBtn"

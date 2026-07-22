@@ -298,6 +298,13 @@ display: inline-block;
 #pCall{
     font-size: 33px;
 }
+#pCall2{
+    font-size: 18px;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
 .callBanner a{
     list-style: none;
     color: var(--red2);
@@ -344,6 +351,22 @@ display: inline-block;
     border-radius: 10PX;
     
   }
+  .whatsappBtnFooter{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(174, 186, 41);
+    background-color: #000000;
+    padding: 8px;
+    margin-top: 10PX;
+    border-radius:0PX;
+    border: 1px solid rgb(174, 186, 41);
+    
+  }
+   .whatsappBtnFooter:hover{
+    background-color: rgb(174, 186, 41);
+    color: #000000;
+    border: 1px solid rgb(0, 0, 0)
+   }
  
 
 /* ==========================================================================
@@ -377,7 +400,7 @@ display: inline-block;
 }
 .containerGrid {
  display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 15px;
     padding: 0px 0 100px 110px;
    
@@ -388,9 +411,20 @@ display: inline-block;
     align-items: center;
     padding-right: 50px;
     padding-bottom: 100px;
-    
+    min-height: 400px;
 }
-.sideImg{
+.testImgBox{
+    width: 100%;
+    height: 100%;
+}
+.testImgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+.side{
     width: 100%;
     height: 100%;
      object-fit: cover;
@@ -399,8 +433,8 @@ display: inline-block;
 }
 
 .card{
-    width: 260px;
-    height: 255px;
+    width: 230px;
+    height: 225px;
     background-color: rgb(255, 255, 255);
     border: 0.5px solid rgba(128, 128, 128, 0.353);
     border-radius: 5px;
@@ -456,7 +490,7 @@ display: inline-block;
 }
 .wwwGrid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
     color: white;
     margin-top: 20px;
  
@@ -568,6 +602,7 @@ display: inline-block;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 20px;
+    margin-top: 35px;
 }
 .whyCard{
     background-color: #1a1a1a;
@@ -678,7 +713,8 @@ display: inline-block;
     height: 100%;
     background-color: aqua;text-decoration: none;
     background-color: white;
-    padding: 25px;
+    padding:25px 0 0 10px;
+
   
     color: var(--red2);
     font-family: var(--font-display);
@@ -705,8 +741,18 @@ display: inline-block;
     width: 100%;
     min-height: 160px;
     background-color: black;
-    padding: 50px 15px 15px 15px;
+    padding: 10px 15px 15px 15px;
     font-family: var(--font-display);
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+.footerHeader{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    padding-left: 80px;
+    font-family: var(--font-display);
+    border-bottom: 1px solid gray;
 }
 .footerGrid{
     display: grid;
@@ -718,44 +764,41 @@ display: inline-block;
 }
 .ft1{
     font-family: var(--font-display);
-    font-style: italic;
-    font-weight: 800;
-    font-size: 34px;
-    letter-spacing: 0.5px;
+    font-weight: 300;
+    letter-spacing: 0.9px;
     text-decoration: none;
-    color: var(--ink);
-    line-height: 1;
-    color: white;
-    padding: 75px 30px 30px 30px;
+    line-height: 1.2;
+    padding: 10px;
+    
+
 }
 .ft1 strong{
     color: var(--red2);
 }
 .ft1 p{
-    font-family: var(--font-display);
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 18px;
+    
     color: white;
 }
 #footLogo{
-    font-size: 60px;
+    font-size: 30px;
+    font-weight: 900;
 }
 .ft2{
     color: white;
    
     padding: 20px;
-    border-left: 1px solid rgba(255, 255, 255, 0.78);
+    
 }
 .ft3{
     color: white;
     padding: 20px;
-    padding-left: 0px;
     text-decoration: none;
      
 }
 .ft3 p {
-    font-size: 26px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 300;
 }
 #linkFooter{
      list-style-type: none;
@@ -764,7 +807,24 @@ display: inline-block;
       font-size: 18px;
       
 }
-
+.mapLink{
+    display: inline-block;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color:black;
+    padding: 8px 16px;
+    border:1px solid red;
+    border-radius: 0px;
+    margin-top: 15px;
+}
+.mapLink:hover{
+    background-color: var(--red2);
+    color: #000000;
+}
 /* ==========================================================================
    WHATSAPP FLOATING BUTTON
    ========================================================================== */
@@ -795,10 +855,24 @@ display: inline-block;
 /* ==========================================================================
    RESPONSIVE — TABLET (max-width: 1400px)
    ========================================================================== */
-@media(max-width:1400px){
+@media(max-width:1440px){
     .wwwGrid{
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem;
+        
+       
+       
+    }
+    .imgGrid{
+  
+     
+    }
+    .testImgBox{
+      
+    }
+    .containerGrid{
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
     }
 }
  @media(max-width:1024px){
@@ -866,7 +940,7 @@ display: inline-block;
 /* ==========================================================================
    RESPONSIVE — MOBILE (max-width: 680px)
    ========================================================================== */
-@media(max-width:680px){
+@media(max-width:780px){
     .showNumberBanner{
     padding-top: 30px;
     
@@ -909,7 +983,11 @@ display: inline-block;
     margin-top: 0;
  
    }
-  
+    .containerGrid {
+        padding: 0 0 0 0;
+        gap: 20px;
+         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
     .wwdGridBox{
         padding: 10px;
     }
@@ -950,7 +1028,13 @@ display: inline-block;
     .whyUsTopBox{
     width: 300px;
 }
-
+.bigGrid{
+        grid-template-columns: 1fr;
+    }
+.imgGrid{
+        min-height: 250px;
+        padding: 0 20px 40px 20px;
+    }
     
 }
 @media(max-width:425px){
@@ -963,38 +1047,4 @@ display: inline-block;
     padding: 5px;
     margin-top: 20px;
 }
-}
-/* ==========================================================================
-   RESPONSIVE — "WHAT WE DO" GRID + SIDE IMAGE
-   ========================================================================== */
-@media(max-width:1024px){
-    .containerGrid{
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        padding: 0 20px 60px 20px;
-    }
-    .bigGrid{
-        grid-template-columns: 1fr;
-    }
-    .imgGrid{
-        padding: 0 20px 40px 20px;
-        min-height: 260px;
-        order: -1;
-    }
-}
-
-@media(max-width:680px){
-    .containerGrid{
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        gap: 15px;
-        padding: 0 15px 40px 15px;
-    }
-    .card{
-        width: 100%;
-        height: auto;
-        min-height: 220px;
-    }
-    .imgGrid{
-        min-height: 200px;
-        padding: 0 15px 30px 15px;
-    }
 }

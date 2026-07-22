@@ -43,6 +43,12 @@ function Sectors(){
             <div className="serviceContainer">
                 <h1>SECTORS WE SERVE</h1>
                 <p>Greater London and the Home Counties hold a quarter of the UK's population — and some of its oldest, most demanding properties. Whatever your sector, we understand its pressures.</p>
+                <span className="cube1"></span>
+                        <span className="cube2"></span>
+                        <span className="cube3"></span>
+                        <span className="cube4"></span>
+                        <span className="cube5"></span>
+                        <span className="cube6"></span>
             </div>
         </div>
         <div className="bigSectorGrid">

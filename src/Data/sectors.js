@@ -37,8 +37,8 @@ export const sectors = [
     },
     {
         slug: "local-authority-housing",
-        tag: "Local Authority & Housing",
-        title: "Local Authority & Housing Associations",
+        tag: "Local Authority",
+        title: "Local Authority",
         summary: "Trusted maintenance partners for Local Authorities and Housing Associations managing large residential portfolios.",
         intro: "We work in formal partnership with Local Authorities and Housing Associations across Greater London and the Home Counties, producing the right results at the right price, at the right time. Our directly employed workforce and bespoke Job Tracker system allow full visibility of job completion, KPIs, and response times — essential for organisations managing large, multi-site residential estates.",
         point: "Formal partnership working, full KPI visibility.",

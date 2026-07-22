@@ -22,7 +22,7 @@ function SectorDetail() {
                 <title>{sector.title} | Power Rod</title>
                 <meta name="description" content={sector.summary} />
             </Helmet>
-<div className="topBar">
+        <div className="topBar">
             <div className="container">
                 <span><strong>24/7</strong> Emergency Response — Greater London......</span>
                 <a href="tel:02088474111">0208 847 4111</a>
@@ -53,6 +53,12 @@ function SectorDetail() {
             <div className="topServiceBox">
                 <div className="serviceContainer">
                     <h1>{sector.title.toUpperCase()}</h1>
+                    <span className="cube1"></span>
+                        <span className="cube2"></span>
+                        <span className="cube3"></span>
+                        <span className="cube4"></span>
+                        <span className="cube5"></span>
+                        <span className="cube6"></span>
                 </div>
             </div>
 
